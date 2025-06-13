@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DojoLogin</title>
+  <link rel="stylesheet" href="dijit/themes/claro/claro.css">
+ 
+  <script src="dojo/dojo.js" data-dojo-config="async: true, parseOnLoad: true"></script>
+  <script src="JS/login.js"></script>
+</head>
+
+<body class="claro">
+<fieldset>
+  <div class="container">
+  <h1>Welcome to IBM ACCE</h1>
+<br><br>
+<br><br>
+    <label for="name">Full Name  </label>
+    <input id="name" data-dojo-type="dijit/form/TextBox"  placeHolder=" Enter your FullName" />
+    
+<br><br>
+    <label for="username">Username   </label>
+    <input id="username" data-dojo-type="dijit/form/ValidationTextBox" placeHolder="Enter your UserName " >
+<br><br>
+    <label for="password">Password </label>
+    <input id="password" type="password" data-dojo-type="dijit/form/ValidationTextBox" required placeHolder="Enter your Password" >
+<br><br>
+    <label for="dob">DateofBirth </label>
+    <input id="dob" data-dojo-type="dijit/form/DateTextBox" required placeHolder="Select your dob" />
+<br><br>
+  
+<br><br>
+    <label for="role">Role </label>
+    <select id="role" data-dojo-type="dijit/form/ComboBox"  >
+    
+    
+   <option disabled>select your role</option> 
+      <option value="Admin">Admin</option>
+      <option value="Editor">Editor</option>
+      <option value="Viewer">Viewer</option>
+    </select>
+<br><br>
+<br><br>
+<input data-dojo-type="dijit/form/CheckBox" >
+  <label>I Here by Check Everything is true</label>
+    
+    <button id="loginBtn" data-dojo-type="dijit/form/Button" type="submit" >Login</button>
+    <div id="message" class="message"></div>
+    
+  </div>
+</fieldset>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="dijit/themes/claro/claro.css">
+  <script src="dojo/dojo.js" data-dojo-config="async: true, parseOnLoad: true"></script>
+  <script src="JS/login.js"></script>
+  
+ 
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    fieldset {
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    } 
+
+     form {
+      text-align: center;
+    } 
+
+     #loginBtn {
+      display: block;
+      margin: 1px auto;
+    }
+  </style>
+  
+</head>
+
+<body class="claro">
+ <fieldset> 
+  <div>
+  
+  <form>
+    <h2>Login Page</h2>
+
+    <label for="username">Username</label>
+    <input id="username" data-dojo-type="dijit/form/ValidationTextBox" required placeholder="enter your username" >
+<br><br>
+    <label for="password">Password</label>
+    <input id="password" data-dojo-type="dijit/form/ValidationTextBox" type="password" required placeholder="enter your password">
+<br><br>
+
+    
+   <input id="rememberMe" data-dojo-type="dijit/form/CheckBox">
+  <label for="rememberMe">Remember Me</label> 
+<br><br> 
+
+    <button id="loginBtn" data-dojo-type="dijit/form/Button" type="button">Login</button>
+          <button id="helpBtn" data-dojo-type="dijit/form/Button" type="button">Help</button>
+  </form>
+
+    <div id="message"></div>
+    
+  </div>
+   </fieldset> 
+     <div id="helpDialog" data-dojo-type="dijit/Dialog" title="Need Help?">
+    <p>If you are an admin, use <strong>ADMIN</strong> as username and make sure your password includes '@'.</p>
+  </div>
+</body>
+</html>

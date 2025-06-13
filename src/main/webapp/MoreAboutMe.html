@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset ="UTF-8">
+<title>More Info</title>
+
+
+
+  <link rel="stylesheet" href="dijit/themes/claro/claro.css">
+  <script src="dojo/dojo.js" data-dojo-config="async: true, parseOnLoad: true"></script>
+ <script src="JS/login.js"></script>
+
+	</head>
+<body>
+  <h2>ADD DETAILS HERE:</h2>
+<label for="dob">DateofBirth </label>
+    <input id="dob" data-dojo-type="dijit/form/DateTextBox" required placeHolder="Select your dob" >
+<br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  <br><br>
+  
+<br><br>
+    <label for="role">Role </label>
+    <select id="role" data-dojo-type="dijit/form/ComboBox"  >
+    <option disabled>select your role</option> 
+      <option value="Admin">Admin</option>
+      <option value="Editor">Editor</option>
+      <option value="Viewer">Viewer</option>
+     
+    </select>
+    <br><br>
+    <button data-dojo-type="dijit/form/Button" onclick="alert('Details Saved!')">Details Save</button>
+</body>
+</html>

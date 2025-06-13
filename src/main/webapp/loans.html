@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+ <title>Loans</title>
+
+
+  <link rel="stylesheet" href="dijit/themes/claro/claro.css">
+  <script src="dojo/dojo.js" data-dojo-config="async: true, parseOnLoad: true"></script>
+     <script src="JS/login.js"></script>
+  <style>
+    .btn-group {
+      margin-top: 20px;
+    }
+    .btn-group .dijitButton {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body class="claro">
+ <h2>💰 Loans Page</h2>
+  <p>This page shows loan details.</p>
+
+  <div class="btn-group">
+    <button data-dojo-type="dijit/form/Button" onclick="history.back()">🔙 Back</button>
+    <button data-dojo-type="dijit/form/Button" onclick="alert('Document Saved!')">💾 Save</button>
+    <button data-dojo-type="dijit/form/Button" onclick="alert('Add Document clicked!')">➕ Add Document</button>
+  </div>
+</body>
+</html>
